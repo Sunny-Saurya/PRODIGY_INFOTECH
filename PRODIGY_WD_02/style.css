@@ -6,6 +6,24 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+
+  .display{
+    margin-left: 50px;
+  }
+  .stopwatch-container h1{
+    margin-left: 70px;
+    color: rgb(255, 255, 255);
+  
+  }
+
+  .stopwatch-container{
+    background: linear-gradient(135deg,rgb(175, 175, 255),rgb(3, 44, 114));
+    box-shadow: 2px 2px 3px 2px green;
+    /* margin-top: 200px; */
+  }
+  body{
+    background: #333;
+  }
   
   .display {
     font-size: 48px;
