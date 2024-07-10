@@ -3,6 +3,7 @@ Overview
 
 This repository contains projects I developed during my internship at Prodigy Infotech Company. Over the course of one month, I focused on building various web development projects to enhance my skills and contribute to the company's objectives. Below are the details of each project.
 Projects
+
 1. Landing Page
 
     Description: A responsive landing page designed to provide information about a product or service.
