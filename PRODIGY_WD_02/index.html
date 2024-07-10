@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .display{
+      margin-left: 50px;
+    }
+    .stopwatch-container h1{
+      margin-left: 70px;
+      color: rgb(255, 255, 255);
+    
+    }
+
+    .stopwatch-container{
+      background: linear-gradient(135deg,rgb(175, 175, 255),rgb(3, 44, 114));
+      box-shadow: 2px 2px 3px 2px green;
+      /* margin-top: 200px; */
+    }
+    body{
+      background: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="stopwatch-container">
+    <h1>Stopwatch</h1>
+    <div class="display">
+      <span id="hours">00</span>:
+      <span id="minutes">00</span>:
+      <span id="seconds">00</span>
+    </div>
+    <div class="controls">
+      <button id="start-btn">Start</button>
+      <button id="pause-btn" disabled>Pause</button>
+      <button id="reset-btn">Reset</button>
+      <button id="lap-btn">Lap</button>
+    </div>
+    <ul id="lap-times"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
