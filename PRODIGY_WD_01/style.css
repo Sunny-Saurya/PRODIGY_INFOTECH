@@ -1,0 +1,287 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #090952;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #0f485f;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  /* color: #333; */
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation Bar */
+nav{
+  z-index: 1000;
+}
+.navbar {
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: none;
+  padding: 10px 0;
+  transition: background-color 0.5s ease;
+}
+
+.navbar.scrolled {
+  background-color: #252596;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.nav-link:hover {
+  color: #09c806;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1831a9;
+  padding: 10px;
+  display: none;
+}
+
+.dropdown-menu li {
+  margin-bottom: 10px;
+}
+
+.dropdown-menu li:last-child {
+  margin-bottom: 0;
+}
+
+.nav-menu li:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hero Image */
+
+.hero-image {
+  /* height: 100vh; */
+  width: 32.5vw;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  margin-left: 210px;
+  object-fit: cover;
+}
+
+.mission {
+  height: 60vh;
+  width: 30vw;
+  background:linear-gradient(120deg, rgb(48, 48, 147), rgb(10, 92, 124));
+  padding: 40px;
+  margin-top: 50px;
+  margin-left: 15px;
+  font-size: 20px;
+  color: #000000;
+  transition: 1s ease-in-out;
+  overflow:scroll;
+  box-shadow:2px 3px 4px black;
+}
+
+.mission>h3 {
+  color: rgb(248, 239, 0);
+  text-align: center;
+}
+
+.service {
+  height: 60vh;
+  width: 30vw;
+  background:linear-gradient(120deg, rgb(48, 48, 147), rgb(10, 92, 124));
+  padding: 40px;
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 20px;
+  color: #000000;
+  transition: 1s ease-in-out;
+  overflow:scroll;
+  box-shadow:2px 3px 4px black;
+}
+
+.service>h3 {
+  color: rgb(248, 239, 0);
+  text-align: center;
+}
+
+.yoyo{
+  margin-top: 70px;
+  margin-left: 25px;
+}
+
+.team {
+  height: 60vh;
+  width: 30vw;
+  background:linear-gradient(120deg, rgb(48, 48, 147), rgb(10, 92, 124));
+  padding: 40px;
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 20px;
+  color: #000000;
+  transition: 1s ease-in-out;
+  overflow:scroll;
+  z-index: 111;
+  box-shadow:2px 3px 4px black;
+}
+
+.team>h3 {
+  color: rgb(248, 239, 0);
+  text-align: center;
+}
+
+.mission:hover {
+  transform: scale(1.03);
+}
+
+.service:hover {
+  transform: scale(1.03);
+}
+
+.team:hover {
+  transform: scale(1.03);
+}
+
+.box {
+  display: flex;
+  border-radius: 10px;
+}
+
+.box,
+.mission,
+.team,
+.service {
+  border-radius: 10px;
+}
+
+footer {
+  margin-top: 100px;
+  background:linear-gradient(135deg, rgb(34, 34, 113), rgb(1, 20, 28)); /* dark gray background */
+  color: #fff; /* white text */
+  padding: 20px; /* add some padding to make it look nicer */
+  text-align: center; /* center the content */
+}
+
+footer .container {
+  max-width: 1200px; /* set a maximum width for the container */
+  margin: 0 auto; /* center the container */
+  padding: 20px; /* add some padding to make it look nicer */
+}
+
+footer .row {
+  display: flex; /* use flexbox to make the columns equal width */
+  flex-wrap: wrap; /* allow the columns to wrap to the next line */
+  justify-content: center; /* center the columns */
+}
+
+footer .col-md-4 {
+  flex-basis: 33.33%; /* make each column 1/3 of the width */
+  margin: 20px; /* add some margin to make it look nicer */
+}
+
+footer h4 {
+  font-weight: bold; /* make the headings bold */
+  margin-bottom: 10px; /* add some margin to make it look nicer */
+}
+
+footer ul {
+  list-style: none; /* remove the bullet points */
+  padding: 0; /* remove the padding */
+  margin: 0; /* remove the margin */
+}
+
+footer li {
+  margin-bottom: 10px; /* add some margin to make it look nicer */
+}
+
+footer a {
+  color: #fff; /* white text */
+  text-decoration: none; /* remove the underline */
+}
+
+footer a:hover {
+  color: #ccc; /* light gray text on hover */
+}
+
+footer button {
+  background-color: #4CAF50; /* green background */
+  color: #fff; /* white text */
+  border: none; /* remove the border */
+  padding: 10px 20px; /* add some padding to make it look nicer */
+  font-size: 16px; /* make the font size larger */
+  cursor: pointer; /* change the cursor to a pointer */
+}
+
+footer button:hover {
+  background-color: #3e8e41; /* darker green background on hover */
+}
+
+.container h1{
+  font-size: 50px;
+  font-weight: bold;
+  z-index: 0;
+  color: #fff;
+  margin-left: -100px;
+  margin-bottom: 20px;
+}
+.container h1 span{
+  color: #4CAF50;
+
+}
+
+main .container h1{
+  position: relative;
+  top: -300px;
+}
+main .container p{
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: -100px;
+  text-align: center;
+  margin-top: 0px;
+  text-wrap: wrap;
+  text-align: left;
+  position: relative;
+  top: -300px;
+}
