@@ -3,7 +3,6 @@ Overview
 
 This repository contains projects I developed during my internship at Prodigy Infotech Company. Over the course of one month, I focused on building various web development projects to enhance my skills and contribute to the company's objectives. Below are the details of each project.
 Projects
-
 1. Landing Page
 
     Description: A responsive landing page designed to provide information about a product or service.
@@ -46,3 +45,26 @@ Projects
     Features:
         Interactive gameplay
         Reset functionality
+
+-----Installation and Usage----
+
+To view and interact with these projects locally, follow these steps:
+
+    Clone the repository:
+
+
+git clone https://github.com/Sunny-Saurya/PRODIGY_INFOTECH
+
+Navigate to the project folder:
+
+    cd PRODIGY_INFOTECH
+
+    Open the project in your browser:
+        For individual projects, navigate to the respective project folder and open the index.html file in your browser.
+
+Contributing
+
+If you'd like to contribute to any of these projects, feel free to fork the repository and submit a pull request. Any contributions, suggestions, or improvements are welcome!
+License
+
+This repository is licensed under the MIT License. See the LICENSE file for more details.
